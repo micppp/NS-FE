@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
-import formatDate from '@/utils/formatDate';
-import multipleClasses from '@/utils/multipleClasses';
-import isExpired from '@/utils/isExpired';
-import styles from '@/styles/Card.module.css';
+import formatDate from '../utils/formatDate';
+import multipleClasses from '../utils/multipleClasses';
+import isExpired from '../utils/isExpired';
+import styles from '../styles/Card.module.css';
 
 function Card({
   description,
