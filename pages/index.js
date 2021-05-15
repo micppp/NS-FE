@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import Head from 'next/head';
-import Header from '@/components/Header';
+import Header from 'layout/Header';
 import CouponCards from '@/components/CouponCards';
+import Preview from '@/components/Preview';
 
 export default function Home() {
+  const [html, setHtml] = useState('');
+
   return (
     <>
       <Head>
@@ -11,10 +15,15 @@ export default function Home() {
           name="description"
           content="We are a bit like Groupon, but for Coupons."
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+          rel="stylesheet"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <CouponCards />
+      <CouponCards setHtml={setHtml} />
+      {html && <Preview html={html} setHtml={setHtml} />}
     </>
   );
 }
