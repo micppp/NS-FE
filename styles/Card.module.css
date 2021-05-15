@@ -1,0 +1,85 @@
+.card {
+  background-color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0 2px 4px -1px;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+.image {
+  margin-bottom: 2rem;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.description,
+.label {
+  color: var(--textGrey);
+  font-size: 0.933rem;
+  line-height: 1.5;
+}
+
+.datewrap {
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-weight: 500;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: var(--pink);
+  border: 1px solid var(--pinkDarker);
+  border-radius: 0.313rem;
+  color: var(--white);
+  font-weight: 500;
+  height: 40px;
+  width: 100%;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.secondary {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.button:first-of-type {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding: 2.5rem;
+  }
+
+  .image {
+    margin-bottom: 0;
+    margin-right: 2.5rem;
+  }
+
+  .dates {
+    display: flex;
+  }
+
+  .button {
+    width: 140px;
+  }
+
+  .datewrap,
+  .button:first-of-type {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}
