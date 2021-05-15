@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import styles from '@/styles/Preview.module.css';
+import styles from '../styles/Preview.module.css';
 
 function Preview({ html, setHtml }) {
   return (
