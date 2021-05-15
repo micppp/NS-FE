@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Head from 'next/head';
-import Header from 'layout/Header';
-import CouponCards from '@/components/CouponCards';
-import Preview from '@/components/Preview';
+import CouponCards from '../components/CouponCards';
+import Preview from '../components/Preview';
+import Header from '../layout/Header';
 
 export default function Home() {
   const [html, setHtml] = useState('');
