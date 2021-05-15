@@ -28,7 +28,7 @@ I've used `git flow` throughout this as I always do to manage branching and rele
 
 I managed to get through all the tasks on the list in the time we mentioned besides the dockerfile stuff. I believe vercel no longer support docker. But a quick little google shows that you can still run the project pretty much everywhere else using one.
 
-I was cutting it fine with the additional task so it's a very dirty but it does what is asked. It was the quickest way I could think of getting it in.
+I was cutting it fine with the additional task so it's a very dirty but it does what is asked. It was the quickest way I could think of getting it in. When viewing the preview I've added another little button in the top right to close the overlay.
 
 I've just added 2 tests, one for checking the app loads and another checking the data starts to load. Ideally, I'd have one for each state as the data is loading in. I've added the `data-ids` to the elements on the page, but I've gone no further. I would usually mock up a response and call that.
 
